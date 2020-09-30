@@ -1,6 +1,6 @@
 # Mini-Projects with R 
 
-Within this repository, I have attached three R scripts written as a project for my MSc in Behavioural and Economic Science. Should anyone wish to replicate this analysis, feel free to get in touch with me and I can seek permission to share the data with you. 
+Within this repository, I have attached three R scripts written as a project for my MSc in Behavioural and Economic Science.
 
 The R packages employed here are:
 * xyplot
@@ -20,10 +20,13 @@ The results of the simple regression suggest we may infer the following from the
 [Click here to go to script](https://github.com/trisharjani/R_codes/blob/master/Question1.R)
 
 *Graph displaying conscientiousness and well-being filtered by employment where 'Yes' represents recently unemployed and 'No' represents recently employed*
-[Graph]: https://github.com/trisharjani/R_codes/blob/master/Rplot.png
+![Graph](https://github.com/trisharjani/R_codes/blob/master/Rplot.png)
 
 ## 2. How does divorce affect mental health? Is the impact the same for men and women? 
 
 
 
 ## 3. How does distress after diagnosis of a serious illness vary depending on whether a person blames themselves or circumstances? 
+
+
+*Should anyone wish to replicate this analysis, feel free to get in touch with me and I can seek permission to share the data with you.*
