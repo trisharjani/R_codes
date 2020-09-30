@@ -3,8 +3,7 @@
 Within this repository, I have attached three R scripts written as a project for my MSc in Behavioural and Economic Science.
 
 The R packages employed here are:
-* xyplot
-* lattice 
+* lattice (with xyplot)
 * latticeExtra
 
 The statistical methods employed are: 
