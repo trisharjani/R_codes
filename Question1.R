@@ -16,7 +16,7 @@ well.being$employment_binary <- as.factor(ifelse(well.being$recently.unemployed=
 
 summary(well.being)
 
-str(well.being)
+str(well.being) 
 
 #Plotting the data 
 xyplot(well.being ~ conscientiousness, data = well.being, 
