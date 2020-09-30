@@ -17,7 +17,7 @@ The results of the simple regression suggest we may infer the following from the
 * Unemployment seems to have a significantly negative impact on well-being (p = 0.00902) as compared to the well-being of those who are employed 
 * Conscientious individuals are also more likely to have their well-being impacted for each unit increase in self-reported conscientiousness, well-being falls by 0.28 on a 1-10 scale. 
 
-[Click here to go to script]:()
+[Click here to go to script]:(https://github.com/trisharjani/R_codes/blob/master/Question1.R)
 
 *Graph displaying conscientiousness and well-being filtered by employment where 'Yes' represents recently unemployed and 'No' represents recently employed*
 
