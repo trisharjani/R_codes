@@ -1,4 +1,4 @@
-# Mini-Projects with R 
+# Data Visualisation & Exploratory Analysis with R 
 
 Within this repository, I have attached three R scripts written as a project for my MSc in Behavioural and Economic Science.
 
