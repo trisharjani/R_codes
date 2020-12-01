@@ -12,14 +12,25 @@ The statistical methods employed are:
 
 ## 1. Does unemployment affect the well being of conscientious people more? 
 
-The results of the simple regression suggest we may infer the following from the data:
+Using xyplot, lattice and latticeExtra, this script imports a .csv file using 1000 ranodmly observed individuals with 913 'recently employed' and 87 'recently unemployed' individuals. The striking disparity may have an impact on the data.
+
+Well-being was also recorded by asking individuals 'Overall, how satisfied with your life are you nowadays?' measured on a scale of 0 = "not at all" to 10 = "completely" 
+
+Concientiousness was also measured using a personality test and was scaled with a mean of 0 and standard deviation of 1. 
+
+Analysis steps: 
+1. Employment was set as a dummy variable (1, 0)
+2. Gathered basic summary statistics for the data displaying consicentiousness was  
+3. Plotted a simple linear regression between well-being and conscientiousness, colour-coding for employment
+
+We may infer the following from the data:
 * Unemployment seems to have a significantly negative impact on well-being (p = 0.00902) as compared to the well-being of those who are employed 
 * Conscientious individuals are also more likely to have their well-being impacted for each unit increase in self-reported conscientiousness, well-being falls by 0.28 on a 1-10 scale. 
 
 [Click here to go to script](https://github.com/trisharjani/R_codes/blob/master/Question1.R)
 
 *Graph displaying conscientiousness and well-being filtered by employment where 'Yes' represents recently unemployed and 'No' represents recently employed*
-![Graph](https://github.com/trisharjani/R_codes/blob/master/Rplot.png)
+![Graph](https://github.com/trisharjani/R_codes/blob/master/images/Rplot.png)
 
 ## 2. How does divorce affect mental health? Is the impact the same for men and women? 
 
