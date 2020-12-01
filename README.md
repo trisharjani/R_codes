@@ -12,16 +12,17 @@ The statistical methods employed are:
 
 ## 1. Does unemployment affect the well being of conscientious people more? 
 
-Using xyplot, lattice and latticeExtra, this script imports a .csv file using 1000 randomly observed individuals with 913 'recently employed' and 87 'recently unemployed' individuals. The striking disparity may have an impact on the data
+#### Motivation ####
+Using xyplot, lattice and latticeExtra, this script imports a .csv file using 1000 randomly observed individuals with 913 'recently employed' and 87 'recently unemployed' individuals. Well-being was recorded by asking individuals 'Overall, how satisfied with your life are you nowadays?' measured on a scale of 0 = "not at all" to 10 = "completely". Concientiousness was also measured using a personality test and was scaled with a mean of 0 and standard deviation of 1. This was selected as it is one one of the 'big five' personality traits and is commonly used in factor analysis in psychology (McCrae & Costa, 1987). Each one of the 'big five' represents a grouping of different personality traits where conscientiousness represents individuals who are _self-disciplined, organised, achievement-oriented_ amongst other traits. 
 
-Well-being was also recorded by asking individuals 'Overall, how satisfied with your life are you nowadays?' measured on a scale of 0 = "not at all" to 10 = "completely". Concientiousness was also measured using a personality test and was scaled with a mean of 0 and standard deviation of 1. This was selected as it is one one of the 'big five' personality traits and is commonly used in factor analysis in psychology (McCrae & Costa, 1987). Each one of the 'big five' represents a grouping of different personality traits where conscientiousness represents individuals who are _self-disciplined, organised, achievement-oriented_ amongst other traits. 
+Conscientiousness has been documented as a predictor of success. Angela Duckworth and her colleagues found that conscientious adults excel in both objective such as income and wealth as well as subjective measures of success such as life satistfaction, positive affectivity (Duckworth et al., 2012). Nonetheless, the flipside, as Boyce, Wood and Brown (2010) document that the impact of unemployment on subjective measures of success such as life satisfaction are moderated by whether an individual is conscientious or not. This analysis aims to verify and explore this relationship further.   
 
-
-Analysis steps: 
+#### Steps of Analysis #### 
 1. Employment was set as a dummy variable (1, 0)
 2. Gathered basic summary statistics for the data displaying that mean well-being scores were 8.847 and mean conscientiousness was -0.0167 (on a scale of -3 to 3). 
 3. Plotted a simple linear regression between well-being and conscientiousness, colour-coding for employment
 
+#### Results ####
 We may infer the following from the plot:
 * Unemployment seems to have a significantly negative impact on well-being (p = 0.00902) as compared to the well-being of those who are employed 
 * Conscientious individuals are also more likely to have their well-being impacted for each unit increase in self-reported conscientiousness, well-being falls by 0.28 on a 1-10 scale. 
@@ -69,6 +70,8 @@ We may infer the following from the ANOVA results:
 ### Bibliography ### 
 
 Boyce, C. J., Wood, A. M., & Brown, G. D. (2010). The dark side of conscientiousness: Conscientious people experience greater drops in life satisfaction following unemployment. Journal of Research in Personality, 44(4), 535-539.
+
+Duckworth, A. L., Weir, D. R., Tsukayama, E., & Kwok, D. (2012). Who does well in life? Conscientious adults excel in both objective and subjective success. Frontiers in psychology, 3, 356.
 
 McCrae, R. R., & Costa, P. T. (1987). Validation of the five-factor model of personality across instruments and observers. Journal of personality and social psychology, 52(1), 81.
 
