@@ -12,6 +12,8 @@ The statistical methods employed are:
 
 ## 1. Does unemployment affect the well being of conscientious people more? 
 
+[Click here to go to R script](https://github.com/trisharjani/R_codes/blob/master/Question1.R)
+
 #### Motivation ####
 Using xyplot, lattice and latticeExtra, this script imports a .csv file using 1000 randomly observed individuals with 913 'recently employed' and 87 'recently unemployed' individuals. Well-being was recorded by asking individuals 'Overall, how satisfied with your life are you nowadays?' measured on a scale of 0 = "not at all" to 10 = "completely". Concientiousness was also measured using a personality test and was scaled with a mean of 0 and standard deviation of 1. This was selected as it is one one of the 'big five' personality traits and is commonly used in factor analysis in psychology (McCrae & Costa, 1987). Each one of the 'big five' represents a grouping of different personality traits where conscientiousness represents individuals who are _self-disciplined, organised, achievement-oriented_ amongst other traits. 
 
@@ -27,28 +29,29 @@ We may infer the following from the plot:
 * Unemployment seems to have a significantly negative impact on well-being (p = 0.00902) as compared to the well-being of those who are employed 
 * Conscientious individuals are also more likely to have their well-being impacted for each unit increase in self-reported conscientiousness, well-being falls by 0.28 on a 1-10 scale. 
 
-[Click here to go to R script](https://github.com/trisharjani/R_codes/blob/master/Question1.R)
-
 *Graph displaying conscientiousness and well-being filtered by employment where 'Yes' represents recently unemployed and 'No' represents recently employed*
 
 ![Graph](https://github.com/trisharjani/R_codes/blob/master/images/Rplot.png)
 
 ## 2. How does divorce affect mental health? Is the impact the same for men and women? 
 
+[Click here to go to R script](https://github.com/trisharjani/R_codes/blob/master/Question2.R)
+
+### Motivation ####
 Using data from a longitudinal survey, well-being was measured on a 7-point scale at the end of each year. The data only focuses on those that got divorced during the survey as the analyis is looking to compare the impact of divorce on men versus women. 500 observations were recorded.
 
 Years are coded relative to the divorce year where 0 represents the year of divorce, -1 represents 1 year before and +1 represents 1 year after. 
 
-Analysis steps: 
+### Steps of Analysis #### 
 1. Set variables to be factor variables 
 2. Gather basic summary statistics for the data displaying that the mean well-being irrespective of gender was 3.926 (on a scale of 1 to 10). The mean well-being overall also seems to decrease. See the Table of Means below 
-3. 
+3. Adjust to remove individual differences (as this is repeated measure data; same people across multiple time periods) 
+4. Run 2 separate ANOVA analyses answering the following questions: 
+    a) How does divorce affect mental health?
+    b) What's the effect of gender on overall mental health? 
+5. Visualise
 
-We may infer the following from the ANOVA results: 
-* 
-
-[Click here to go to R script](https://github.com/trisharjani/R_codes/blob/master/Question2.R)
-
+#### Results #### 
 *Table of Means over time* 
 | Year | Mean Wellbeing |
 | ---- | :------------: |
@@ -58,13 +61,30 @@ We may infer the following from the ANOVA results:
 |   1  |      3.38      |
 |   2  |      3.84      |
 
-*Graph displaying ...* 
-![Graph]()
+##### Data Visualisations ##### 
 
-*Graph displaying ...* 
-![Graph]()
+![Boxplot1](https://github.com/trisharjani/R_codes/blob/master/images/Rplot02.png)
+
+![Boxplot2](https://github.com/trisharjani/R_codes/blob/master/images/Rplot03.png)
+
+![IndivDiff]()
+
+##### Anova Results ##### 
+
+
+#### We may infer the following from the plots and ANOVA results #####
+* Well-being ratings, irrespective of gender, do differ significantly over time. In particular, there is a significant overall reduction in wellbeing from years -2 to -1 and from -1 to 0. While there are increases in well-being from years 0 to 1 and 1 to 2, they are not significant. 
+* 
 
 ## 3. How does distress after diagnosis of a serious illness vary depending on whether a person blames themselves or circumstances? 
+
+#### Motivation #### 
+
+
+#### Steps of Analysis ####
+
+
+#### Results #### 
 
 
 ### Bibliography ### 
@@ -74,6 +94,5 @@ Boyce, C. J., Wood, A. M., & Brown, G. D. (2010). The dark side of conscientious
 Duckworth, A. L., Weir, D. R., Tsukayama, E., & Kwok, D. (2012). Who does well in life? Conscientious adults excel in both objective and subjective success. Frontiers in psychology, 3, 356.
 
 McCrae, R. R., & Costa, P. T. (1987). Validation of the five-factor model of personality across instruments and observers. Journal of personality and social psychology, 52(1), 81.
-
 
 *Should anyone wish to replicate this analysis, feel free to get in touch with me and I can seek permission to share the data with you.*
