@@ -14,7 +14,7 @@ The statistical methods employed are:
 
 [Click here to go to R script](https://github.com/trisharjani/R_codes/blob/master/Question1.R)
 
-#### Motivation ####
+#### Study Outline ####
 Using xyplot, lattice and latticeExtra, this script imports a .csv file using 1000 randomly observed individuals with 913 'recently employed' and 87 'recently unemployed' individuals. Well-being was recorded by asking individuals 'Overall, how satisfied with your life are you nowadays?' measured on a scale of 0 = "not at all" to 10 = "completely". Concientiousness was also measured using a personality test and was scaled with a mean of 0 and standard deviation of 1. This was selected as it is one one of the 'big five' personality traits and is commonly used in factor analysis in psychology (McCrae & Costa, 1987). Each one of the 'big five' represents a grouping of different personality traits where conscientiousness represents individuals who are _self-disciplined, organised, achievement-oriented_ amongst other traits. 
 
 Conscientiousness has been documented as a predictor of success. Angela Duckworth and her colleagues found that conscientious adults excel in both objective such as income and wealth as well as subjective measures of success such as life satistfaction, positive affectivity (Duckworth et al., 2012). Nonetheless, the flipside, as Boyce, Wood and Brown (2010) document is that conscientious individuals do not always display higher wellbeing. For example, they find that the effect of unemployment on subjective measures of success such as life satisfaction is moderated by whether an individual is conscientious whereby conscientious individuals experience a significantly higher negative impact on life satisfaction. This analysis aims to verify and explore this relationship further.   
@@ -37,10 +37,8 @@ We may infer the following from the plot:
 
 [Click here to go to R script](https://github.com/trisharjani/R_codes/blob/master/Question2.R)
 
-### Motivation ####
-Using data from a longitudinal survey, well-being was measured on a 7-point scale at the end of each year. The data only focuses on those that got divorced during the survey as the analyis is looking to compare the impact of divorce on men versus women. 500 observations were recorded.
-
-Years are coded relative to the divorce year where 0 represents the year of divorce, -1 represents 1 year before and +1 represents 1 year after. 
+### Study Outline ####
+Using data from a longitudinal survey, well-being was measured on a 7-point scale at the end of each year. The data only focuses on those that got divorced during the survey as the analyis is looking to compare the impact of divorce on men versus women. 500 observations were recorded. Years are coded relative to the divorce year where 0 represents the year of divorce, -1 represents 1 year before and +1 represents 1 year after. 
 
 ### Steps of Analysis #### 
 1. Set variables to be factor variables 
@@ -63,29 +61,21 @@ Years are coded relative to the divorce year where 0 represents the year of divo
 
 _Data Visualisations_ 
 
-![Boxplot1](https://github.com/trisharjani/R_codes/blob/master/images/Rplot02.png)
+<img src="https://github.com/trisharjani/R_codes/blob/master/images/Rplot02.png" width="500" height="350"/> 
 
-![Boxplot2](https://github.com/trisharjani/R_codes/blob/master/images/Rplot03.png)
+<img src="https://github.com/trisharjani/R_codes/blob/master/images/Rplot03.png" width="500" height="350"/> 
 
-![IndivDiff]()
+<img src="https://github.com/trisharjani/R_codes/blob/master/images/Rplot04.png" width="400" height="350"/>
 
 _ANOVA Results_  
 
+<img src="https://github.com/trisharjani/R_codes/blob/master/images/anovaresults.jpg" width="550" height="500"/> 
 
 _Brief Conclusions_
 * Well-being ratings, irrespective of gender, do differ significantly over time. In particular, there is a significant overall reduction in wellbeing from years -2 to -1 and from -1 to 0. While there are increases in well-being from years 0 to 1 and 1 to 2, they are not significant. 
-* 
-
-## 3. How does distress after diagnosis of a serious illness vary depending on whether a person blames themselves or circumstances? 
-
-#### Motivation #### 
-
-
-#### Steps of Analysis ####
-
-
-#### Results #### 
-
+* While the ANOVA displays that the well being of men and women is significantly different from each other; the boxplot displays a significant drop in well-being for men betweeen -1 to 0 years and no significant changes throughout the five years for women. Though well-being for both men and women
+generally increases post-divorce producing a general skewed-U shape trend shown in the 2nd boxplot
+* Individual differences are displayed by the circle points in the third visual, raising the possibility of random noise. Despite adjusting for well-being, both also display outliers which may have unduly influenced plots.
 
 ### Bibliography ### 
 
