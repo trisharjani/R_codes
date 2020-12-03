@@ -61,7 +61,7 @@ Years are coded relative to the divorce year where 0 represents the year of divo
 |   1  |      3.38      |
 |   2  |      3.84      |
 
-##### Data Visualisations ##### 
+_Data Visualisations_ 
 
 ![Boxplot1](https://github.com/trisharjani/R_codes/blob/master/images/Rplot02.png)
 
@@ -69,10 +69,10 @@ Years are coded relative to the divorce year where 0 represents the year of divo
 
 ![IndivDiff]()
 
-##### Anova Results ##### 
+_ANOVA Results_  
 
 
-#### We may infer the following from the plots and ANOVA results #####
+_Brief Conclusions_
 * Well-being ratings, irrespective of gender, do differ significantly over time. In particular, there is a significant overall reduction in wellbeing from years -2 to -1 and from -1 to 0. While there are increases in well-being from years 0 to 1 and 1 to 2, they are not significant. 
 * 
 
